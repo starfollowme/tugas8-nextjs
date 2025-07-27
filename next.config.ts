@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["bcryptjs"]
-  }
+  experimental: {},
+  serverExternalPackages: [], // atau hapus kalau tidak pakai
 }
 
-module.exports = nextConfig
+export default nextConfig

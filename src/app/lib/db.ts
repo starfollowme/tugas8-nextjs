@@ -1,5 +1,7 @@
 import { prisma } from './prisma';
-import type { User, Article } from '@prisma/client';
+
+import { User, Article } from '@prisma/client';
+
 
 export const userService = {
   async findByEmail(email: string): Promise<User | null> {
